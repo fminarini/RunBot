@@ -52,6 +52,9 @@ Right now, the bot has two main features, `/monit` and `/push`:
 
 so if your script has PID=12345, then writing `/monit 12345` in the chat will trigger the monitor feature of the bot.
 
-- **/push** _filename_ triggers the upload in the bot-chat of the specified file (which of course needs to be in the correct path and have exactly the name we provided to the command.
+- **/push** _filename_ triggers the upload of the specified file in the bot chat-room (the file needs to be in the current working path and have exactly the name we provided to the command.
 
 so, if our program writes some output to a `logfile.txt`, if we write `/push logfile.txt` we will see it uploaded in the chat.
+
+- **publish** _filename_ triggers the upload of the specified picture in the bot chat-room (the picture needs to be in the current working path and have exactly the name we provided to the command.
+
