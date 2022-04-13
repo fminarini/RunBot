@@ -56,6 +56,6 @@ so if your script has PID=12345, then writing `/monit 12345` in the chat will tr
 
 so, if our program writes some output to a `logfile.txt`, if we write `/push logfile.txt` we will see it uploaded in the chat.
 
-- **publish** _filename_ triggers the upload of the specified picture in the bot chat-room (the picture needs to be in the current working path and have exactly the name we provided to the command.
+- **/publish** _filename_ triggers the upload of the specified picture in the bot chat-room (the picture needs to be in the current working path and have exactly the name we provided to the command.
 
 so, if our code produced a certain png image, we can upload it with `/publish pic.png`
