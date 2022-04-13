@@ -53,7 +53,7 @@ class Runbot:
 	
 		doc_name = os.getcwd()+'/'+ str(context.args[0])
 		with open(doc_name, "rb") as docs:
-			context.bot.send_document(update.message.chat_id, document=docs, filename=str(context.args[0])
+			context.bot.send_document(update.message.chat_id, document=docs, filename=str(context.args[0]))
 
 	def Launch(self):
 		
