@@ -17,15 +17,15 @@ class Runbot:
 		
 	
 	def Start(self, 
-			  update: Update, 
-			  context: CallbackContext):
-				  
+	          update: Update, 
+		  context: CallbackContext):
+		
 		update.message.reply_text("Welcome to RunBot, type /help for a list of available features")
 	
 	
 	def Help(self, 
 	         update: Update,  
-			 context: CallbackContext):
+		 context: CallbackContext):
 			
 		update.message.reply_text("""/start for live message, /monit <PID> to monitor a specific PID, 
 							  /push to upload in this chat a copy of the indicated file""")
@@ -33,7 +33,7 @@ class Runbot:
 	
 	def Monitor(self, 
 	            update: Update,
-				context: CallbackContext):
+		    context: CallbackContext):
 		
 		PID = int(context.args[0])
 		update.message.reply_text("Ok, I will watch {} with great interest".format(PID))
@@ -48,8 +48,8 @@ class Runbot:
 
 
 	def PushDoc(self,
-				update: Update,
-				context: CallbackContext):
+		    update: Update,
+		    context: CallbackContext):
 	
 		doc_name = os.getcwd()+'/'+ str(context.args[0])
 		with open(doc_name, "rb") as docs:
