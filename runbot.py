@@ -54,12 +54,21 @@ class Runbot:
 		doc_name = os.getcwd()+'/'+ str(context.args[0])
 		with open(doc_name, "rb") as docs:
 			context.bot.send_document(update.message.chat_id, document=docs, filename=str(context.args[0]))
-
+	
+	def PushFig(self,
+		    update: Update,
+		    context: CallbackContext):
+		
+		fig_name = os.getcwd()+'/'+ str(context.args[0])
+		with open(fig_name, "rb") as fig:
+			context.bot.send_photo(update.message.chat_id, photo=fig, filename=str(context.args[0]))
+	
 	def Launch(self):
 		
 		self.updater.dispatcher.add_handler(CommandHandler('start', self.Start))
 		self.updater.dispatcher.add_handler(CommandHandler('help', self.Help))
 		self.updater.dispatcher.add_handler(CommandHandler('monit', self.Monitor))
 		self.updater.dispatcher.add_handler(CommandHandler('push', self.PushDoc))
-
+		self.updater.dispatcher.add_handler(CommandHandler('publish', self.PushFig))
+		
 		self.updater.start_polling()
