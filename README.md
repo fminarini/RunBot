@@ -22,7 +22,7 @@ This small project relies on https://python-telegram-bot.readthedocs.io/en/stabl
 # Prepare to launch your own RunBot
 The logic of the bot is kept in a separate class (runbot.py). Just a single edit is required on this file:
 
-- Substitute "\<YOUR-BOT-TOKEN-HERE\>" with the Token produced by BotFather (i.e. "\<PLACE-YOUR-OWN-TOKEN-HERE\>" --> "token")
+- Substitute "\<PLACE-YOUR-OWN-TOKEN-HERE\>" with the Token produced by BotFather (i.e. "\<PLACE-YOUR-OWN-TOKEN-HERE\>" --> "token")
 
 Then you should place runbot.py in a folder within your current working directory:
 
