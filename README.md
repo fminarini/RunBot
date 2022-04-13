@@ -58,3 +58,4 @@ so, if our program writes some output to a `logfile.txt`, if we write `/push log
 
 - **publish** _filename_ triggers the upload of the specified picture in the bot chat-room (the picture needs to be in the current working path and have exactly the name we provided to the command.
 
+so, if our code produced a certain png image, we can upload it with `/publish pic.png`
